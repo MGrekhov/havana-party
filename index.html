@@ -3,47 +3,178 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Havana Club Party am 03.07.2026 in der Pockelsstraße 8. Eintritt frei, Cocktails, Fassbier und Party Hits direkt auf dem Campus." />
+
   <title>Havana Club Party</title>
+
   <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
-  <main class="page">
+  <main>
     <section class="hero">
-      <div class="eyebrow">Karibik. Cocktails. Campus.</div>
+      <div class="hero__content">
+        <p class="eyebrow">Karibik. Cocktails. Campus.</p>
 
-      <h1>
-        <span>HAVANA</span>
-        <em>Club</em>
-        <span>PARTY</span>
-      </h1>
+        <h1 class="logo-title">
+          <span class="logo-title__main">HAVANA</span>
+          <span class="logo-title__script">Club</span>
+          <span class="logo-title__main logo-title__party">PARTY</span>
+        </h1>
 
-      <p class="subtitle">Die letzte große Party vor der Klausurenphase.</p>
+        <p class="subtitle">Die letzte große Party vor der Klausurenphase.</p>
 
-      <div class="info">
-        <p>📅 Freitag, 03.07.2026</p>
-        <p>🕗 Ab 20:00 Uhr</p>
-        <p>📍 Pockelsstraße 8, Braunschweig</p>
-        <p>🎟 Eintritt frei</p>
+        <div class="quick-info">
+          <div>
+            <span class="icon">📅</span>
+            <strong>03.07.2026</strong>
+            <small>Freitag</small>
+          </div>
+
+          <div>
+            <span class="icon">🕗</span>
+            <strong>ab 20:00 Uhr</strong>
+            <small>Open End</small>
+          </div>
+
+          <div>
+            <span class="icon">📍</span>
+            <strong>Pockelsstraße 8</strong>
+            <small>38106 Braunschweig</small>
+          </div>
+
+          <div>
+            <span class="icon">🎟</span>
+            <strong>Eintritt frei</strong>
+            <small>Keine Abendkasse</small>
+          </div>
+        </div>
+
+        <div class="hero__actions">
+          <a
+            class="button button--primary"
+            href="https://www.google.com/maps/search/?api=1&query=Pockelsstra%C3%9Fe%208%2C%2038106%20Braunschweig"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Route öffnen
+          </a>
+
+          <a class="button button--secondary" href="#infos">
+            Mehr Infos
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section id="infos" class="section">
+      <p class="section-kicker">Was erwartet euch?</p>
+      <h2>Eine Sommernacht direkt auf dem Campus.</h2>
+
+      <div class="feature-grid">
+        <article class="feature-card">
+          <div class="feature-card__icon">🍹</div>
+          <h3>Cocktails</h3>
+          <p>Mit Havana Club Rum, Eis und Sommer-Vibes.</p>
+        </article>
+
+        <article class="feature-card">
+          <div class="feature-card__icon">🍺</div>
+          <h3>Fassbier</h3>
+          <p>Frisch gezapft, schnell an der Theke, perfekt für den Abend.</p>
+        </article>
+
+        <article class="feature-card">
+          <div class="feature-card__icon">🎵</div>
+          <h3>Party Hits</h3>
+          <p>Sommerhits, Klassiker und Songs, die jeder kennt.</p>
+        </article>
+
+        <article class="feature-card">
+          <div class="feature-card__icon">🏛</div>
+          <h3>Campus</h3>
+          <p>Pockelsstraße 8 — direkt im Herzen des Uni-Campus.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section story-section">
+      <div class="story-box">
+        <p class="section-kicker">Havana Feeling</p>
+        <h2>Kubanische Rum-Tradition, warme Nächte und gute Musik.</h2>
+        <p>
+          Seit 1934 steht Havana Club für kubanische Rum-Tradition und das Lebensgefühl
+          der Karibik. Aus den Straßen Havannas wurde die Marke zu einem Symbol für
+          warme Nächte, gute Musik und entspannte Sommerabende.
+        </p>
+        <p>
+          Und wir holen ein Stück dieser Atmosphäre nach Braunschweig.
+        </p>
+      </div>
+    </section>
+
+    <section class="section menu-section">
+      <p class="section-kicker">Getränke</p>
+      <h2>Getränkekarte</h2>
+
+      <div class="menu-list">
+        <div class="menu-item">
+          <span>Cuba Libre</span>
+          <small>Havana Club Rum · Cola · Limette</small>
+        </div>
+
+        <div class="menu-item">
+          <span>Havana Sunset</span>
+          <small>Havana Club Rum · Orangensaft · Grenadine</small>
+        </div>
+
+        <div class="menu-item">
+          <span>Fassbier</span>
+          <small>Frisch gezapft</small>
+        </div>
+
+        <div class="menu-item">
+          <span>Softdrinks & Wasser</span>
+          <small>Alkoholfreie Optionen</small>
+        </div>
       </div>
 
-      <a class="button" href="https://www.google.com/maps/search/?api=1&query=Pockelsstraße+8+Braunschweig" target="_blank">
-        Route öffnen
-      </a>
-    </section>
-
-    <section class="cards">
-      <div>🍹 Cocktails mit Havana Club Rum</div>
-      <div>🍺 Frisches Fassbier</div>
-      <div>🎵 Party Hits & Sommerstimmung</div>
-      <div>🏛 Direkt auf dem Campus</div>
-    </section>
-
-    <section class="text">
-      <h2>Mehr Infos bald hier</h2>
-      <p>
-        Getränkekarte, weitere Details und Updates folgen in den nächsten Tagen.
+      <p class="note">
+        Die genaue Getränkekarte kann sich noch leicht ändern.
       </p>
     </section>
+
+    <section class="section faq-section">
+      <p class="section-kicker">Kurz gefragt</p>
+      <h2>FAQ</h2>
+
+      <div class="faq">
+        <details>
+          <summary>Muss ich Eintritt bezahlen?</summary>
+          <p>Nein. Der Eintritt ist frei.</p>
+        </details>
+
+        <details>
+          <summary>Kann ich Freunde mitbringen?</summary>
+          <p>Ja. Die Party ist offen, solange es im Haus nicht zu voll wird.</p>
+        </details>
+
+        <details>
+          <summary>Wo findet die Party statt?</summary>
+          <p>Pockelsstraße 8, 38106 Braunschweig — direkt auf dem Campus.</p>
+        </details>
+
+        <details>
+          <summary>Ab wann geht es los?</summary>
+          <p>Ab 20:00 Uhr.</p>
+        </details>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <p>Havana Club Party · 03.07.2026 · Pockelsstraße 8</p>
+      <p class="footer__small">Sängerschaft Frankonia Brunonia</p>
+    </footer>
   </main>
 </body>
 </html>
