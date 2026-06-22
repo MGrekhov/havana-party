@@ -60,7 +60,7 @@ a {
   position: relative;
   min-height: 100svh;
   display: grid;
-  align-items: end;
+  align-items: start;
   isolation: isolate;
   overflow: hidden;
   padding: 1rem;
@@ -70,13 +70,28 @@ a {
   position: absolute;
   inset: 0;
   z-index: -3;
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+}
+
+.hero__media::before {
+  content: "";
+  position: absolute;
+  inset: -2rem;
+  background: url("assets/hero-night.jpg") center / cover no-repeat;
+  filter: blur(20px) saturate(1.12);
+  opacity: 0.72;
+  transform: scale(1.05);
 }
 
 .hero__media img {
+  position: relative;
   width: 100%;
   height: 100%;
-  object-fit: cover;
-  object-position: center;
+  object-fit: contain;
+  object-position: center top;
+  opacity: 0.96;
 }
 
 .hero::before,
@@ -90,8 +105,8 @@ a {
 .hero::before {
   z-index: -2;
   background:
-    linear-gradient(180deg, rgba(5, 3, 3, 0.08) 0%, rgba(5, 3, 3, 0.2) 26%, rgba(5, 3, 3, 0.9) 100%),
-    radial-gradient(circle at 50% 36%, rgba(5, 3, 3, 0.2), rgba(5, 3, 3, 0.7) 72%);
+    linear-gradient(180deg, rgba(5, 3, 3, 0.1) 0%, rgba(5, 3, 3, 0.16) 34%, rgba(5, 3, 3, 0.72) 100%),
+    radial-gradient(circle at 50% 30%, rgba(5, 3, 3, 0.06), rgba(5, 3, 3, 0.44) 76%);
 }
 
 .hero::after {
@@ -105,9 +120,10 @@ a {
 }
 
 .hero__content {
-  width: min(100%, 70rem);
+  width: min(100%, 58rem);
   margin: 0 auto;
-  padding: 18vh 0 2.25rem;
+  padding: 2.4rem 0 2rem;
+  text-align: center;
 }
 
 .eyebrow {
@@ -121,7 +137,7 @@ a {
 }
 
 .poster-title {
-  margin: 0;
+  margin: 0 auto;
   max-width: 12ch;
   font-family: Impact, Haettenschweiler, "Arial Black", sans-serif;
   font-size: 4.35rem;
@@ -148,7 +164,7 @@ a {
 .poster-title em {
   display: block;
   width: max-content;
-  margin: -0.28em 0 -0.14em 1.25rem;
+  margin: -0.28em auto -0.14em;
   color: var(--red);
   font-family: "Brush Script MT", "Segoe Script", "Lucida Handwriting", cursive;
   font-size: 0.88em;
@@ -164,7 +180,7 @@ a {
 
 .hero__subtitle {
   max-width: 36rem;
-  margin: 1.3rem 0 0;
+  margin: 1.3rem auto 0;
   color: #fff6dd;
   font-size: 1.35rem;
   font-weight: 800;
@@ -178,7 +194,7 @@ a {
   gap: 0.55rem;
   width: 100%;
   max-width: 42rem;
-  margin: 1.4rem 0 0;
+  margin: 1.4rem auto 0;
 }
 
 .event-strip div {
@@ -210,7 +226,7 @@ a {
   flex-direction: column;
   gap: 0.75rem;
   max-width: 42rem;
-  margin-top: 1.25rem;
+  margin: 1.25rem auto 0;
 }
 
 .button {
@@ -295,13 +311,13 @@ details {
 }
 
 .highlight-card {
-  min-height: 13.5rem;
-  padding: 1rem;
+  min-height: 9.8rem;
+  padding: 0.85rem;
 }
 
 .card-number,
 .drink-card__type {
-  margin: 0 0 1rem;
+  margin: 0 0 0.55rem;
   color: var(--teal);
   font-size: 0.78rem;
   font-weight: 900;
@@ -312,7 +328,7 @@ details {
 .drink-card h3 {
   margin: 0;
   color: var(--cream);
-  font-size: 1.25rem;
+  font-size: 1.14rem;
   line-height: 1.1;
   text-transform: uppercase;
 }
@@ -327,7 +343,7 @@ details p {
 
 .highlight-card p:last-child,
 .drink-card p:last-child {
-  margin: 0.8rem 0 0;
+  margin: 0.55rem 0 0;
 }
 
 .split-section {
@@ -417,7 +433,8 @@ details p {
   }
 
   .hero__content {
-    padding-bottom: 3rem;
+    padding-top: 3.4rem;
+    padding-bottom: 2.5rem;
   }
 
   .poster-title {
@@ -452,16 +469,16 @@ details p {
 
 @media (min-width: 64rem) {
   .hero {
-    align-items: center;
+    align-items: start;
     padding: 2rem;
   }
 
   .hero__media img {
-    object-position: center 42%;
+    object-position: center top;
   }
 
   .hero__content {
-    padding-top: 10vh;
+    padding-top: 4rem;
   }
 
   .poster-title {
