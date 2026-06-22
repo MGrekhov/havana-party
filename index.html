@@ -2,55 +2,76 @@
 <html lang="de">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Havana Club Party am 03.07.2026 in der Pockelsstraße 8. Eintritt frei, Cocktails, Fassbier und Party Hits direkt auf dem Campus." />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#050303" />
+  <meta
+    name="description"
+    content="Havana Club Party am 03.07.2026 ab 20:00 Uhr in der Pockelsstraße 8, 38106 Braunschweig. Eintritt frei, Cocktails, Fassbier und Sommerstimmung direkt auf dem Campus."
+  />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://mgrekhov.github.io/havana-party/" />
+  <meta property="og:title" content="Havana Club Party · 03.07.2026" />
+  <meta
+    property="og:description"
+    content="Die letzte große Sommernacht vor der Klausurenphase. Eintritt frei, ab 20:00 Uhr, Pockelsstraße 8 in Braunschweig."
+  />
+  <meta property="og:image" content="https://mgrekhov.github.io/havana-party/assets/hero-night.jpg" />
+  <meta property="og:locale" content="de_DE" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Havana Club Party · 03.07.2026" />
+  <meta
+    name="twitter:description"
+    content="Karibik, Cocktails und Campus: die letzte große Sommernacht vor der Klausurenphase."
+  />
+  <meta name="twitter:image" content="https://mgrekhov.github.io/havana-party/assets/hero-night.jpg" />
 
-  <title>Havana Club Party</title>
+  <title>Havana Club Party · 03.07.2026</title>
 
+  <link rel="canonical" href="https://mgrekhov.github.io/havana-party/" />
+  <link rel="preload" as="image" href="assets/hero-night.jpg" />
   <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
   <main>
-    <section class="hero">
-      <div class="hero__content">
-        <p class="eyebrow">Karibik. Cocktails. Campus.</p>
+    <section class="hero" aria-labelledby="hero-title">
+      <picture class="hero__media" aria-hidden="true">
+        <img src="assets/hero-night.jpg" alt="" width="864" height="1821" />
+      </picture>
 
-        <h1 class="logo-title">
-          <span class="logo-title__main">HAVANA</span>
-          <span class="logo-title__script">Club</span>
-          <span class="logo-title__main logo-title__party">PARTY</span>
+      <div class="hero__content">
+        <p class="eyebrow">KARIBIK. COCKTAILS. CAMPUS.</p>
+
+        <h1 id="hero-title" class="poster-title" aria-label="Havana Club Party">
+          <span>HAVANA</span>
+          <em>Club</em>
+          <span>PARTY</span>
         </h1>
 
-        <p class="subtitle">Die letzte große Party vor der Klausurenphase.</p>
+        <p class="hero__subtitle">
+          Die letzte große Sommernacht vor der Klausurenphase.
+        </p>
 
-        <div class="quick-info">
+        <dl class="event-strip" aria-label="Eventdaten">
           <div>
-            <span class="icon">📅</span>
-            <strong>03.07.2026</strong>
-            <small>Freitag</small>
+            <dt>Datum</dt>
+            <dd>03.07.2026</dd>
           </div>
-
           <div>
-            <span class="icon">🕗</span>
-            <strong>ab 20:00 Uhr</strong>
-            <small>Open End</small>
+            <dt>Start</dt>
+            <dd>ab 20:00 Uhr</dd>
           </div>
-
           <div>
-            <span class="icon">📍</span>
-            <strong>Pockelsstraße 8</strong>
-            <small>38106 Braunschweig</small>
+            <dt>Ort</dt>
+            <dd>Pockelsstraße 8</dd>
           </div>
-
           <div>
-            <span class="icon">🎟</span>
-            <strong>Eintritt frei</strong>
-            <small>Keine Abendkasse</small>
+            <dt>Eintritt</dt>
+            <dd>Eintritt frei</dd>
           </div>
-        </div>
+        </dl>
 
-        <div class="hero__actions">
+        <div class="hero__actions" aria-label="Aktionen">
           <a
             class="button button--primary"
             href="https://www.google.com/maps/search/?api=1&query=Pockelsstra%C3%9Fe%208%2C%2038106%20Braunschweig"
@@ -59,122 +80,141 @@
           >
             Route öffnen
           </a>
-
-          <a class="button button--secondary" href="#infos">
-            Mehr Infos
-          </a>
+          <a class="button button--ghost" href="#infos">Mehr Infos</a>
         </div>
       </div>
     </section>
 
-    <section id="infos" class="section">
-      <p class="section-kicker">Was erwartet euch?</p>
-      <h2>Eine Sommernacht direkt auf dem Campus.</h2>
+    <section class="section section--highlights" aria-labelledby="highlights-title">
+      <div class="section__intro">
+        <p class="eyebrow">Highlights</p>
+        <h2 id="highlights-title">Sommernacht mit Campus-Puls.</h2>
+      </div>
 
-      <div class="feature-grid">
-        <article class="feature-card">
-          <div class="feature-card__icon">🍹</div>
-          <h3>Cocktails</h3>
-          <p>Mit Havana Club Rum, Eis und Sommer-Vibes.</p>
+      <div class="highlight-grid">
+        <article class="highlight-card">
+          <p class="card-number">01</p>
+          <h3>Cocktails mit Havana Club Rum</h3>
+          <p>Cuba Libre, Havana Sunset und kalte Drinks mit Karibikgefühl.</p>
         </article>
-
-        <article class="feature-card">
-          <div class="feature-card__icon">🍺</div>
-          <h3>Fassbier</h3>
-          <p>Frisch gezapft, schnell an der Theke, perfekt für den Abend.</p>
+        <article class="highlight-card">
+          <p class="card-number">02</p>
+          <h3>Frisches Fassbier</h3>
+          <p>Frisch gezapft, unkompliziert und perfekt für lange Sommerabende.</p>
         </article>
-
-        <article class="feature-card">
-          <div class="feature-card__icon">🎵</div>
-          <h3>Party Hits</h3>
-          <p>Sommerhits, Klassiker und Songs, die jeder kennt.</p>
+        <article class="highlight-card">
+          <p class="card-number">03</p>
+          <h3>Party Hits & Sommerstimmung</h3>
+          <p>Warme Lichter, laute Refrains und ein Abend vor dem Lernmodus.</p>
         </article>
-
-        <article class="feature-card">
-          <div class="feature-card__icon">🏛</div>
-          <h3>Campus</h3>
-          <p>Pockelsstraße 8 — direkt im Herzen des Uni-Campus.</p>
+        <article class="highlight-card">
+          <p class="card-number">04</p>
+          <h3>Direkt auf dem Campus</h3>
+          <p>Nur ein kurzer Weg bis zur Pockelsstraße 8 in Braunschweig.</p>
         </article>
       </div>
     </section>
 
-    <section class="section story-section">
-      <div class="story-box">
-        <p class="section-kicker">Havana Feeling</p>
-        <h2>Kubanische Rum-Tradition, warme Nächte und gute Musik.</h2>
-        <p>
-          Seit 1934 steht Havana Club für kubanische Rum-Tradition und das Lebensgefühl
-          der Karibik. Aus den Straßen Havannas wurde die Marke zu einem Symbol für
-          warme Nächte, gute Musik und entspannte Sommerabende.
-        </p>
-        <p>
-          Und wir holen ein Stück dieser Atmosphäre nach Braunschweig.
-        </p>
+    <section id="infos" class="section split-section" aria-labelledby="info-title">
+      <div>
+        <p class="eyebrow">Event Info</p>
+        <h2 id="info-title">Ein Stück Sommer vor der Klausurenphase.</h2>
       </div>
-    </section>
-
-    <section class="section menu-section">
-      <p class="section-kicker">Getränke</p>
-      <h2>Getränkekarte</h2>
-
-      <div class="menu-list">
-        <div class="menu-item">
-          <span>Cuba Libre</span>
-          <small>Havana Club Rum · Cola · Limette</small>
-        </div>
-
-        <div class="menu-item">
-          <span>Havana Sunset</span>
-          <small>Havana Club Rum · Orangensaft · Grenadine</small>
-        </div>
-
-        <div class="menu-item">
-          <span>Fassbier</span>
-          <small>Frisch gezapft</small>
-        </div>
-
-        <div class="menu-item">
-          <span>Softdrinks & Wasser</span>
-          <small>Alkoholfreie Optionen</small>
-        </div>
-      </div>
-
-      <p class="note">
-        Die genaue Getränkekarte kann sich noch leicht ändern.
+      <p class="lead">
+        Am 03.07. holen wir ein Stück Sommer- und Karibikgefühl nach
+        Braunschweig. Direkt auf dem Campus erwarten euch Cocktails, Fassbier,
+        Musik und eine letzte große Party vor der Klausurenphase.
       </p>
     </section>
 
-    <section class="section faq-section">
-      <p class="section-kicker">Kurz gefragt</p>
-      <h2>FAQ</h2>
+    <section class="section" aria-labelledby="drinks-title">
+      <div class="section__intro">
+        <p class="eyebrow">Drinks</p>
+        <h2 id="drinks-title">Geplante Karte.</h2>
+      </div>
 
-      <div class="faq">
+      <div class="drinks-grid">
+        <article class="drink-card drink-card--featured">
+          <p class="drink-card__type">Cocktail</p>
+          <h3>Cuba Libre</h3>
+          <p>Havana Club Rum · Cola · Limette</p>
+        </article>
+        <article class="drink-card drink-card--featured">
+          <p class="drink-card__type">Cocktail</p>
+          <h3>Havana Sunset</h3>
+          <p>Havana Club Rum · Orangensaft · Grenadine</p>
+        </article>
+        <article class="drink-card">
+          <p class="drink-card__type">Vom Fass</p>
+          <h3>Fassbier</h3>
+          <p>Frisch gezapft und kalt serviert.</p>
+        </article>
+        <article class="drink-card">
+          <p class="drink-card__type">Alkoholfrei</p>
+          <h3>Softdrinks & Wasser</h3>
+          <p>Für Pausen, Heimweg und den nächsten Morgen.</p>
+        </article>
+      </div>
+
+      <p class="note">Die genaue Getränkekarte kann sich noch leicht ändern.</p>
+    </section>
+
+    <section class="section location-section" aria-labelledby="location-title">
+      <div>
+        <p class="eyebrow">Location</p>
+        <h2 id="location-title">Direkt auf dem Campus.</h2>
+      </div>
+
+      <address class="location-card">
+        <strong>Pockelsstraße 8</strong>
+        <span>38106 Braunschweig</span>
+        <span>Direkt auf dem Campus</span>
+        <a
+          class="button button--primary"
+          href="https://www.google.com/maps/search/?api=1&query=Pockelsstra%C3%9Fe%208%2C%2038106%20Braunschweig"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Route öffnen
+        </a>
+      </address>
+    </section>
+
+    <section class="section faq-section" aria-labelledby="faq-title">
+      <div class="section__intro">
+        <p class="eyebrow">FAQ</p>
+        <h2 id="faq-title">Kurz geklärt.</h2>
+      </div>
+
+      <div class="faq-list">
         <details>
           <summary>Muss ich Eintritt bezahlen?</summary>
-          <p>Nein. Der Eintritt ist frei.</p>
+          <p>Nein, der Eintritt ist frei.</p>
         </details>
-
+        <details>
+          <summary>Wann geht es los?</summary>
+          <p>Ab 20:00 Uhr.</p>
+        </details>
         <details>
           <summary>Kann ich Freunde mitbringen?</summary>
-          <p>Ja. Die Party ist offen, solange es im Haus nicht zu voll wird.</p>
+          <p>Ja, solange es im Haus nicht zu voll wird.</p>
         </details>
-
         <details>
           <summary>Wo findet die Party statt?</summary>
-          <p>Pockelsstraße 8, 38106 Braunschweig — direkt auf dem Campus.</p>
+          <p>Pockelsstraße 8, 38106 Braunschweig.</p>
         </details>
-
         <details>
-          <summary>Ab wann geht es los?</summary>
-          <p>Ab 20:00 Uhr.</p>
+          <summary>Gibt es alkoholfreie Getränke?</summary>
+          <p>Ja, Softdrinks und Wasser sind geplant.</p>
         </details>
       </div>
     </section>
-
-    <footer class="footer">
-      <p>Havana Club Party · 03.07.2026 · Pockelsstraße 8</p>
-      <p class="footer__small">Sängerschaft Frankonia Brunonia</p>
-    </footer>
   </main>
+
+  <footer class="footer">
+    <p>Havana Club Party · 03.07.2026</p>
+    <p>Pockelsstraße 8, 38106 Braunschweig</p>
+    <p>Sängerschaft Frankonia Brunonia</p>
+  </footer>
 </body>
 </html>
