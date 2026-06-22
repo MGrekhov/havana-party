@@ -159,15 +159,16 @@ a {
   display: block;
   width: max-content;
   margin: -0.28em auto -0.14em;
-  color: var(--red);
+  color: var(--teal);
   font-family: "Brush Script MT", "Segoe Script", "Lucida Handwriting", cursive;
   font-size: 0.88em;
   font-style: normal;
   font-weight: 700;
   line-height: 1;
   text-shadow:
-    0 0 9px rgba(242, 50, 34, 0.96),
-    0 0 32px rgba(242, 50, 34, 0.78);
+    0 1px 0 rgba(255, 241, 207, 0.65),
+    0 0 10px rgba(24, 215, 193, 0.96),
+    0 0 34px rgba(24, 215, 193, 0.82);
   text-transform: none;
   transform: rotate(-4deg);
 }
@@ -278,7 +279,7 @@ h2 {
   margin: 0;
   color: var(--orange);
   font-family: Impact, Haettenschweiler, "Arial Black", sans-serif;
-  font-size: 2.5rem;
+  font-size: 2.25rem;
   line-height: 0.95;
   letter-spacing: 0;
   text-transform: uppercase;
@@ -457,7 +458,7 @@ details p {
   }
 
   h2 {
-    font-size: 3.6rem;
+    font-size: 3.2rem;
   }
 }
 
