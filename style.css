@@ -159,16 +159,17 @@ a {
   display: block;
   width: max-content;
   margin: -0.28em auto -0.14em;
-  color: var(--teal);
+  color: #fff0bf;
   font-family: "Brush Script MT", "Segoe Script", "Lucida Handwriting", cursive;
   font-size: 0.88em;
   font-style: normal;
   font-weight: 700;
   line-height: 1;
   text-shadow:
-    0 1px 0 rgba(255, 241, 207, 0.65),
-    0 0 10px rgba(24, 215, 193, 0.96),
-    0 0 34px rgba(24, 215, 193, 0.82);
+    0 1px 0 rgba(93, 19, 11, 0.85),
+    0 0 10px rgba(255, 122, 26, 0.95),
+    0 0 30px rgba(242, 50, 34, 0.84),
+    0 0 52px rgba(255, 122, 26, 0.38);
   text-transform: none;
   transform: rotate(-4deg);
 }
